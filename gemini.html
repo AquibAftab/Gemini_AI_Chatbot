@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chatboat</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body> 
+    <!--Header greetings-->
+    <header class="header">
+        <h2 class="title">Hello, there</h2>
+        <h4 class="subtitle">How can I help you today?</h4>
+        <!----Sugesstion list-->
+        <ul class="suggestion-list">
+            <li class="suggestion">
+                <h4 class="text">Help me plan a game night with my 5 best friends
+                    for under $100
+                </h4>
+                <i class="icon fa-solid fa-pen-fancy"></i>
+                
+            </li>
+            <li class="suggestion">
+                <h4 class="text">What are the best tips to improve my public speaking skills!
+                </h4>
+                <i class="icon fa-regular fa-lightbulb"></i>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Can you help me to find latest news about web developement
+                </h4>
+                <i class="icon fa-regular fa-compass"></i>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Write javascript code to sum all elements in an array
+                </h4>
+                <i class="icon fa-solid fa-code"></i>            </li>
+         
+
+        </ul>
+    </header>
+    <!--Chat-list/Container-->
+    <div class="chat-list"> </div>
+
+    <!--Typing area-->
+    <div class="typing-area">
+        <form action="#" class="typing-form">
+        <div class="input-wrapper">
+            <input type="text" placeholder="Enter a prompt here"
+            class="typing-input" required>
+            <button class="icon fa-solid fa-paper-plane"></button>
+        </div>
+        <div class="action-buttons">
+            <i id="toggle-theme-button" class="icon fa-regular fa-sun"></i>
+            <i id="delete-chat-button" class="icon fa-solid fa-trash-can"></i>
+        </div>
+        </form>
+        <p class="disclaimer-text">Gemini may display
+            inaccurate info, including about people,
+            so double-check its responses.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
